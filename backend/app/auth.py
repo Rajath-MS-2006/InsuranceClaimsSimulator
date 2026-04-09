@@ -8,7 +8,7 @@ from passlib.context import CryptContext
 from pydantic import BaseModel
 import jwt
 
-from app.db.database import SessionLocal, User
+from backend.app.db.database import SessionLocal, User
 
 SECRET_KEY = "vErY_SeCrEt_DeMo_kEy"
 ALGORITHM = "HS256"
