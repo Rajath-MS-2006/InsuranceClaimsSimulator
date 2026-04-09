@@ -1,5 +1,5 @@
 from typing import List
-from app.services.rule_engine import ClaimResult
+from backend.app.services.rule_engine import ClaimResult
 
 class Explainer:
     @staticmethod
