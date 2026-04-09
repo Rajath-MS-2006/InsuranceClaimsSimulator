@@ -4,12 +4,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import List
 from pydantic import BaseModel
 
-from app.services.document_ai import DocumentExtractor, ExtractedBill
-from app.services.policy_nlp import PolicyParser, PolicyRule
-from app.services.rule_engine import RuleEngine, ClaimResult
-from app.services.explainer import Explainer
-from app.db.database import save_rule_to_pg, save_claim_to_mongo, get_all_claims
-from app import auth
+from backend.app.services.document_ai import DocumentExtractor, ExtractedBill
+from backend.app.services.policy_nlp import PolicyParser, PolicyRule
+from backend.app.services.rule_engine import RuleEngine, ClaimResult
+from backend.app.services.explainer import Explainer
+from backend.app.db.database import save_rule_to_pg, save_claim_to_mongo, get_all_claims
+from backend.app import auth
 
 app = FastAPI(title="Explainable Claim Adjudication API", version="1.0")
 
