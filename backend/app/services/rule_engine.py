@@ -1,8 +1,8 @@
 from typing import List, Dict, Any
 from pydantic import BaseModel
-from app.services.document_ai import ExtractedBill, BillItem
-from app.services.policy_nlp import PolicyRule
-from app.ontology.semantic_matcher import SemanticMatcher
+from backend.app.services.document_ai import ExtractedBill, BillItem
+from backend.app.services.policy_nlp import PolicyRule
+from backend.app.ontology.semantic_matcher import SemanticMatcher
 
 class AdjudicationTrace(BaseModel):
     item_description: str
