@@ -2,7 +2,7 @@ import os
 import re
 from pydantic import BaseModel
 from typing import List, Optional
-from app.ontology.semantic_matcher import SemanticMatcher
+from backend.app.ontology.semantic_matcher import SemanticMatcher
 
 class PolicyRule(BaseModel):
     category: str
